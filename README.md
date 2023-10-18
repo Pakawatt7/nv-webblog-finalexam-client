@@ -11,7 +11,7 @@
     *** ถ้า push ขึ้นไม่ได้ ให้ upload files ขึ้น Git Repository เอง (ไม่ได้คะแนนในข้อ 4)***  
     โดยให้นำรหัสนิสิตตนเอง mod 4 ได้ค่าเท่าไหร่นั่นคือหมายเลข API ที่นิสิตต้องแก้ไขหน้า UI 
 
-เช่น รหัสนิสิต 64310001 % 4 = 1 
+เช่น ลำดับที่ 61 mod 4 = 1 
     ให้นิสิตทำ API หมายเลข 1. Course เป็นต้น  
 ### การส่งงาน
     ส่ง URL ของ Git Repository  
@@ -69,7 +69,7 @@ endpoint for delete 1 speaker: DELETE http://10.10.59.14:8081/speaker/speakerId
 }
 ```
 
-### 4. Book 
+### 3. Book 
 endpoint for get all books: GET http://10.10.59.14:8081/books  
 endpoint for get 1 book: GET http://10.10.59.14:8081/book/bookId  
 endpoint for edit 1 book: PUT http://10.10.59.14:8081/book/bookId  
