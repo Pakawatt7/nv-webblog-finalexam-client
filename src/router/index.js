@@ -4,6 +4,10 @@ import UserIndex from '@/components/Users/Index'
 import UserEdit from '@/components/Users/EditUser'
 import UserShow from '@/components/Users/ShowUser'
 import UserCreate from '@/components/Users/CreateUser'
+import CourseIndex from '@/components/Course/Index'
+import CourseShow from '@/components/Course/ShowCourse'
+import CourseEdit from '@/components/Course/EditCourse'
+import CourseCreate from '@/components/Course/CreateCourse'
 
 Vue.use(Router)
 
@@ -28,6 +32,26 @@ export default new Router({
       path: '/users',
       name: 'users',
       component: UserIndex
+    },
+    {
+      path: '/courses',
+      name: 'courses',
+      component: CourseIndex
+    },
+    {
+      path: '/course/:courseId',
+      name: 'course',
+      component: CourseShow
+    },
+    {
+      path: '/course/edit/:courseId',
+      name: 'course-edit',
+      component: CourseEdit
+    },
+    {
+      path: '/course/create',
+      name: 'course-create',
+      component: CourseCreate
     },
 
     
