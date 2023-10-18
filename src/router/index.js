@@ -4,6 +4,10 @@ import UserIndex from '@/components/Users/Index'
 import UserEdit from '@/components/Users/EditUser'
 import UserShow from '@/components/Users/ShowUser'
 import UserCreate from '@/components/Users/CreateUser'
+import CourseIndex from '@/components/Course/Index'
+import CourseShow from '@/components/Course/ShowCourse'
+import CourseEdit from '@/components/Course/EditCourse'
+import CourseCreate from '@/components/Course/CreateCourse'
 
 import CarIndex from '@/components/Car/Index'
 import CarEdit from '@/components/Car/EditCar'
@@ -35,6 +39,7 @@ export default new Router({
       name: 'users',
       component: UserIndex
     },
+ 
 ////////////////////////////Car/////////////////////////////
 {
   path: '/car/create',
@@ -56,5 +61,30 @@ export default new Router({
   name: 'cars',
   component: CarIndex
 }
+=======
+    {
+      path: '/courses',
+      name: 'courses',
+      component: CourseIndex
+    },
+    {
+      path: '/course/:courseId',
+      name: 'course',
+      component: CourseShow
+    },
+    {
+      path: '/course/edit/:courseId',
+      name: 'course-edit',
+      component: CourseEdit
+    },
+    {
+      path: '/course/create',
+      name: 'course-create',
+      component: CourseCreate
+    },
+
+    
+
+>>>>>>> 9f64770440e12c75a220d20746433752c8161807
   ]
 })
